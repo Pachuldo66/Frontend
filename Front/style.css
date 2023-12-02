@@ -3,6 +3,24 @@ body{
     margin: 0;
     padding: 0;
 }
+.notification{
+    width: 50px;
+    margin: 100px auto;
+}
+.notification .count{
+    --size: 30px
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+    border: solid 2px white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    max-width:var(--size);
+}
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
