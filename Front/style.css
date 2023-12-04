@@ -6,10 +6,12 @@ body{
 .notification{
     width: 50px;
     margin: 100px auto;
+    animation: ring 4s 0.7s ease-in-out infinite,
+    transform-origin 50% 4px; 
 }
 .notification .count{
     --size: 30px
-    font-size: 12px;
+    font-size 12px;
     font-weight: bolder;
     background-color: red;
     color: white;
@@ -20,6 +22,89 @@ body{
     width: var(--size);
     height: var(--size);
     max-width:var(--size);
+    max-height:var(--size);
+    box-sizing:border-box;
+    position:relative;
+    border-radius: 50%;
+    top:20px;
+    left:20px;
+}
+@keyframes ring {
+    0%{
+        transformrm: rotate(0deg);
+    }
+    1%{
+        transformrm: rotate(30deg);
+    }
+    3%{
+        transformrm: rotate(-30deg);
+    }
+    5%{
+        transformrm: rotate(34deg);
+    }
+    7%{
+        transformrm: rotate(-32deg);
+    }
+    9%{
+        transformrm: rotate(30deg);
+    }
+    11%{
+        transformrm: rotate(-28deg);
+    }
+    13%{
+        transformrm: rotate(26deg);
+    }
+    15%{
+        transformrm: rotate(-24deg);
+    }
+    17%{
+        transformrm: rotate(22deg);
+    }
+    19%{
+        transformrm: rotate(-20deg);
+    }
+    21%{
+        transformrm: rotate(18deg);
+    }
+    23%{
+        transformrm: rotate(-16deg);
+    }
+    19%{
+        transformrm: rotate(-20deg);
+    }
+    25%{
+        transformrm: rotate(14deg);
+    }
+    27%{
+        transformrm: rotate(-12deg);
+    }
+    29%{
+        transformrm: rotate(10deg);
+    }
+    31%{
+    transformrm: rotate(-8deg);
+    }
+    33%{
+    transformrm: rotate(6deg);
+    }
+    35%{
+    transformrm: rotate(-4deg);
+    }
+    37%{
+    transformrm: rotate(2deg);
+    }
+    39%{
+    transformrm: rotate(-1deg);
+    }
+    41%{
+    transformrm: rotate(1deg);
+    }
+    43%{
+    transformrm: rotate(0deg);
+    }
+    100%{
+    transformrm: rotate(0deg);
+    }
 }
 .material-icons {
     font-family: 'Material Icons';
